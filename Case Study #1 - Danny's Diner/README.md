@@ -2,7 +2,7 @@
 
 ## Solution
 
-[View the complete code](https://github.com/YogeshOlla/8-Weeks-SQL-Challenge/blob/main/Case%20Study%201%20-%20Danny's%20Diner/SQL%20Code/Case%20Study%201%20-%20Danny's%20Diner.sql).
+[View the complete code](https://github.com/anshulkansal121/8-Week-SQL-Challenge/blob/main/Case%20Study%20%231%20-%20Danny's%20Diner/dannys_dinner.sql).
 
 ***
 
