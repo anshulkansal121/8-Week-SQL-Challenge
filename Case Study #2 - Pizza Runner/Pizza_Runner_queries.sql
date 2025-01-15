@@ -315,7 +315,8 @@ FROM runner_orders;
 -- 6. What was the average speed for each runner for each delivery and do you notice any trend for these values?
 SELECT runner_id, order_id, distance/(duration/60) AS avg_speed_kmph
 FROM runner_orders
-WHERE cancellation IS NULL;
+WHERE cancellation IS NULL
+ORDER BY 1;
 
 -- 7. What is the successful delivery percentage for each runner?
 SELECT runner_id, ROUND(SUM(CASE WHEN cancellation IS NULL THEN 1 END)*100/COUNT(*),2) as successful_delivery_percentage
