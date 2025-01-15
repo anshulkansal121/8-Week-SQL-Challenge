@@ -299,7 +299,7 @@ FROM customer_orders c
 JOIN runner_orders r ON c.order_id = r.order_id
 WHERE r.cancellation IS NULL
 GROUP BY c.order_id
-ORDER BY num_of_pizzas DESC;
+ORDER BY c.order_id, num_of_pizzas DESC;
 
 -- 4. What was the average distance travelled for each customer?
 SELECT c.customer_id, ROUND(AVG(CAST(distance AS signed)),2) AS avg_distance_travelled
